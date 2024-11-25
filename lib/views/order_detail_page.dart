@@ -25,7 +25,7 @@ class OrderDetailsPage extends StatelessWidget {
                   icon: const Icon(
                     Icons.arrow_back,
                     color: AppColor.customColor,
-                    size: 30,
+                    size: 24,
                   ),
                   onPressed: () {
                     Get.back();
@@ -35,7 +35,9 @@ class OrderDetailsPage extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/logo-400x400.png',
-                      height: 100,
+                      height: 123,
+                      width: 123,
+
                     ),
                   ],
                 ),
