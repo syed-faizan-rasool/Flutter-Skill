@@ -189,7 +189,7 @@ class HomePage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     final row = rowController.rows[index];
                     return Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: AppColor.white,
                         border: Border(
                           bottom:
@@ -205,7 +205,7 @@ class HomePage extends StatelessWidget {
                                 color: row["isQuantityEditable"]
                                     ? AppColor.white
                                     : AppColor.white,
-                                border: Border(
+                                border: const Border(
                                   right: BorderSide(
                                       color: AppColor.customColor, width: 1),
                                 ),
