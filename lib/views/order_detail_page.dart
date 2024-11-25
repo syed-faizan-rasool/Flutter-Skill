@@ -11,7 +11,7 @@ class OrderDetailsPage extends StatelessWidget {
     final String orderNo = args["orderNo"] ?? "No Order Number";
     final int totalQuantity = args["totalQuantity"] ?? 0;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColor.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
@@ -128,7 +128,7 @@ class OrderDetailsPage extends StatelessWidget {
                   '$totalQuantity',
                   style: const TextStyle(
                     fontSize: 18,
-                    color: Colors.black,
+                    color: AppColor.black,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

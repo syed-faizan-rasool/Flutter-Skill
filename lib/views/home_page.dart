@@ -231,7 +231,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                         Expanded(
+                          Expanded(
   flex: 4,
   child: GestureDetector(
     onDoubleTap: () {
