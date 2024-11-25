@@ -1,0 +1,1 @@
+ E:\\Sol_exp\\Flutter\\Flutter-Skill-test\\.dart_tool\\flutter_build\\5d68a27f999563e7e8119f02e8e5fdda\\native_assets.yaml: 

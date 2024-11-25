@@ -1,0 +1,4 @@
+#Mon Nov 25 15:12:49 PKT 2024
+base.0=E\:\\Sol_exp\\Flutter\\Flutter-Skill-test\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

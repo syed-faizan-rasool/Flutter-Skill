@@ -1,0 +1,1 @@
+ E:\\media\ design\ test\\flutter_mediadesignerxpert_test\\.dart_tool\\flutter_build\\65f0780a86f0cefa1425b79ec0aacc77\\native_assets.yaml: 
