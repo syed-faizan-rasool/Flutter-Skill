@@ -28,7 +28,7 @@ class RowController extends GetxController {
 
   // Initialize rows
   void _initializeRows() {
-    for (int i = 0; i < 5000; i++) {
+    for (int i = 0; i < 10; i++) {
       rows.add({
         "quantityController": TextEditingController(),
         "itemController": TextEditingController(),
