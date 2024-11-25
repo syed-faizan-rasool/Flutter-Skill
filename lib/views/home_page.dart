@@ -86,9 +86,9 @@ class HomePage extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.center,
                         child: Image.asset(
-                          'assets/logo-400x400.png',
-                          height: 100,
-                          width: 200,
+                          'assets/mediatechlogo.jpg',
+                          height: 123,
+                          width: 123,
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -112,7 +112,7 @@ class HomePage extends StatelessWidget {
                             color: rowController.isActionButtonsEnabled.value
                                 ? AppColor.customColor
                                 : AppColor.grey,
-                            size: 30,
+                            size: 24,
                           ),
                           onPressed: rowController.isActionButtonsEnabled.value
                               ? () {
@@ -130,7 +130,7 @@ class HomePage extends StatelessWidget {
                     icon: Icon(
                       Icons.arrow_forward,
                       color: rowController.isActionButtonsEnabled.value ? AppColor.customColor : AppColor.grey,
-                      size: 30,
+                      size: 24,
                     ),
                     onPressed: rowController.isActionButtonsEnabled.value
                         ? () {
@@ -205,7 +205,7 @@ class HomePage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: row["isQuantityEditable"]
+                                  color: row["isQuantityEditable"]    
                                       ? AppColor.white
                                       : AppColor.white,
                                   border: const Border(

@@ -28,7 +28,7 @@ class RowController extends GetxController {
 
   // Initialize rows
   void _initializeRows() {
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 500; i++) {
       rows.add({
         "quantityController": TextEditingController(),
         "itemController": TextEditingController(),
@@ -71,21 +71,33 @@ class RowController extends GetxController {
 
   // Reset method to clear all data
   void resetData() {
-    for (var row in rows) {
-      row["quantityController"].clear();
-      row["itemController"].clear();
+  // Clear all rows
+  for (var row in rows) {
+    row["quantityController"].clear();
+    row["itemController"].clear();
 
-      row["isQuantityEditable"] = false;
-      row["isItemEditable"] = false;
-      row["notes"] = "";
-      row["hasImage"] = false;
-    }
-
-    rows[0]["isQuantityEditable"] = true;
-    updateButtonState();
-    totalQuantity.value = 0;
-    rows.refresh();
+    row["isQuantityEditable"] = false;
+    row["isItemEditable"] = false;
+    row["notes"] = "";
+    row["hasImage"] = false;
   }
+
+  // Reset the first row to be editable
+  rows[0]["isQuantityEditable"] = true;
+
+  // Clear the order number field
+  orderNoController.clear();
+
+  // Reset total quantity
+  totalQuantity.value = 0;
+
+  // Update action button state
+  updateButtonState();
+
+  // Refresh rows to update the UI
+  rows.refresh();
+}
+
 
   void updateEditability(int index) {
     if (rows[index]["quantityController"].text.isNotEmpty) {
